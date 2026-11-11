@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MY PHOTO GALLERY</h1>
+        <p>LANDSCAPES, PORTRAITS AND ARCHITECTURE</p>
+    </header>
+
+    <!-- Hidden Radio Inputs for pure CSS filtering -->
+    <input type="radio" name="filter" id="all" checked hidden>
+    <input type="radio" name="filter" id="landscapes" hidden>
+    <input type="radio" name="filter" id="portraits" hidden>
+    <input type="radio" name="filter" id="architecture" hidden>
+
+    <!-- Filter Labels (acting as buttons) -->
+    <div class="filter">
+        <label class="filter-btn" for="all">All</label>
+        <label class="filter-btn" for="landscapes">Landscapes</label>
+        <label class="filter-btn" for="portraits">Portraits</label>
+        <label class="filter-btn" for="architecture">Architecture</label>
+    </div>
+
+    <!-- Main Gallery -->
+    <main class="gallery">
+
+        <!-- Landscapes -->  
+        <div class="card" data-category="landscapes">
+            <div class="image-box">
+                <img src="mountain.webp" alt="Landscapes 1">
+                <span class="category-tag">Landscape</span>
+            </div>
+            <p>The highest mountain on Earth is Mount Everest, with an elevation of 8,849 meters (29,032 feet) above sea level.</p>
+            <h2>Mountain view</h2>
+        </div>
+
+        <div class="card" data-category="landscapes">
+            <div class="image-box">
+                <img src="forest.jpg" alt="Landscapes 2">
+                <span class="category-tag">Landscape</span>
+            </div>
+            <p>A forest path typically meanders through dense woods, often lined with tall trees, wildflowers, or moss-covered ground.</p>
+            <h2>Forest path</h2>
+        </div>
+
+        <div class="card" data-category="landscapes">
+            <div class="image-box">
+                <img src="beach.jpg" alt="Landscapes 3">
+                <span class="category-tag">Landscape</span>
+            </div>
+            <p>A beach sunset is more than a scenic view, it carries layered symbolic meaning, blending natural beauty with emotional resonance.</p>
+            <h2>Beach sunset view</h2>
+        </div>
+
+        <div class="card" data-category="landscapes">
+            <div class="image-box">
+                <img src="lake.jpg" alt="Landscapes 4">
+                <span class="category-tag">Landscape</span>
+            </div>
+            <p>Lakes lie completely on land and are separate from the ocean.</p>
+            <h2>Lake view</h2>
+        </div>
+
+        <!-- Portraits -->
+        <div class="card" data-category="portraits">
+            <div class="image-box">
+                <img src="studio.jpg" alt="Portraits 1">
+                <span class="category-tag">Portraits</span>
+            </div>
+            <p>The purpose of a studio shoot is to create images in a controlled indoor environment where every element can be managed.</p>
+            <h2>Studio</h2>
+        </div>
+
+        <div class="card" data-category="portraits">
+            <div class="image-box">
+                <img src="street.jpg" alt="Portraits 2">
+                <span class="category-tag">Portraits</span>
+            </div>
+            <p>A street path generally refers to a defined route or way that connects two points, used for travel by people or vehicles.</p>
+            <h2>Street path</h2>
+        </div>
+
+        <div class="card" data-category="portraits">
+            <div class="image-box">
+                <img src="oldman.jpg" alt="Portraits 3">
+                <span class="category-tag">Portraits</span>
+            </div>
+            <p>Older adults are like living links to the past.</p>
+            <h2>Old man</h2>
+        </div>
+
+        <div class="card" data-category="portraits">
+            <div class="image-box">
+                <img src="smilingperson.jpg" alt="Portraits 4">
+                <span class="category-tag">Portraits</span>
+            </div>
+            <p>Photos capture moments of joy, love, and belonging, while also reminding viewers of life's impermanence.</p>
+            <h2>Smiling person</h2>
+        </div>
+
+        <!-- Architecture -->
+        <div class="card" data-category="architecture">
+            <div class="image-box">
+                <img src="building.jpg" alt="Architecture 1">
+                <span class="category-tag">Architecture</span>
+            </div>
+            <p>Building landmarks showcasing diverse styles, cultural significance, and historical importance worldwide.</p>
+            <h2>Building</h2>
+        </div>
+
+        <div class="card" data-category="architecture">
+            <div class="image-box">
+                <img src="church.jpg" alt="Architecture 2">
+                <span class="category-tag">Architecture</span>
+            </div>
+            <p>Churches developed from simple meeting spaces into monumental structures that shaped towns and cities.</p>
+            <h2>Historic church</h2>
+        </div>
+
+        <div class="card" data-category="architecture">
+            <div class="image-box">
+                <img src="house.jpg" alt="Architecture 3">
+                <span class="category-tag">Architecture</span>
+            </div>
+            <p>Modern homes today blend aesthetics, function, and sustainability.</p>
+            <h2>Modern house</h2>
+        </div>
+
+        <div class="card" data-category="architecture">
+            <div class="image-box">
+                <img src="bridge.jpg" alt="Architecture 4">
+                <span class="category-tag">Architecture</span>
+            </div>
+            <p>Bridge architecture combines engineering, materials science, and aesthetics to create safe structures.</p>
+            <h2>Bridge at night</h2>
+        </div>
+
+    </main>
+</body>
+</html>
